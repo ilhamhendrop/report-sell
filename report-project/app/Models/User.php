@@ -26,7 +26,6 @@ class User extends Authenticatable
     protected $fillable = [
         'username',
         'name',
-        'email',
         'password',
         'role'
     ];
@@ -59,5 +58,9 @@ class User extends Authenticatable
             'id' => 'string',
             'roleEnum' => RoleEnum::class
         ];
+    }
+
+    public function sales() {
+        return $this->hasMany(Sales::class);
     }
 }

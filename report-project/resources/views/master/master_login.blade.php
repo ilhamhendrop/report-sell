@@ -27,6 +27,20 @@
     <script src="{{ asset('admin/js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('admin/js/all.js') }}"></script>
     <script src="{{ asset('admin/js/scripts.js') }}"></script>
+    <script>
+        $('document').ready(function(e) {
+            setTimeout(function() {
+                $("div.alertSucces").remove();
+            }, 2000);
+        })
+    </script>
+    <script>
+        $('document').ready(function(e) {
+            setTimeout(function() {
+                $("div.alertDanger").remove();
+            }, 2000);
+        })
+    </script>
     @yield('js')
 </body>
 
