@@ -13,7 +13,6 @@
                         <h3 class="text-center font-weight-light my-4">Login</h3>
                     </div>
                     <div class="card-body">
-                        @include('master.alert.error')
                         <form action="{{ route('login.store') }}" method="POST">
                             @csrf
                             <div class="form-floating mb-3">

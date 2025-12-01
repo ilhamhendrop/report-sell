@@ -27,7 +27,7 @@ class LoginController extends Controller
             return Redirect::route('admin.dashboard.index');
         }
 
-        return Redirect::back()->with('errors', 'Username dan Password salah');
+        return Redirect::back();
     }
 
     public function logout(Request $request) {
