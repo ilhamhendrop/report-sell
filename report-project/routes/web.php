@@ -15,6 +15,7 @@ Route::controller(LoginController::class)->group(function () {
 Route::middleware(['auth', 'role:' . RoleEnum::ADMIN->value])->group(function () {
     Route::controller(DashboardController::class)->group(function () {
         Route::get('/admin/dashboard', 'indexDashboard')->name('admin.dashboard.index');
+        Route::get('/admin/dashboard/filter', 'filterSale')->name('dashboard.sale.filter');
     });
 
     Route::controller(LoginController::class)->group(function () {
