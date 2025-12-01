@@ -1,4 +1,4 @@
-FROM dunglas/frankenphp:php8.4-bookwor
+FROM dunglas/frankenphp:php8.4-bookworm
 
 RUN apt-get update && apt-get install -y \
     git unzip zip libzip-dev libxml2-dev libonig-dev \
