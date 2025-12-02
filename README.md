@@ -6,6 +6,7 @@ Laporan Penjualan
 - git clone
 - masuk ke folder
 - copy replace .env.example menjadi .env
+- buka phpmyadmin buat database
 - setting db di .env
 - jalankan composer install
 - jalankan php artisan key:generate
