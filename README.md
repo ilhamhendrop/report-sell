@@ -15,3 +15,4 @@ Laporan Penjualan
 - maka akan keluar link diterminal dicopy
 - masukan ke browser link yang muncul di terminal
 - kemudian login dengan username Admin dan password Ab123.Ab
+- https://greendev.my.id
